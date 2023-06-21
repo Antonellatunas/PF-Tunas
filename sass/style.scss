@@ -1,0 +1,259 @@
+
+/*imports*/
+@import "reseteo";
+@import "footer";
+@import "header";
+@import "navegacion";
+@import "galery";
+@import "variables";
+@import "responsive";
+@font-face {
+    font-family: neutraface text;
+    src: url(../assets/font/neutraface-text-cufonfonts/);
+}
+@font-face {
+    font-family:general sans;
+    src: url(../assets/font/GeneralSans_Complete/Fonts/OTF/);
+}
+/*body*/
+body{background-color:$colorbackg;
+    height: fit-content;
+    min-height: 100vh;
+}
+/*contenido index*/
+/*eventos de index*/
+.noticias-data{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin-left: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .event1, .event2, .event3{
+        display: inline-flex;
+        margin:20px;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: 150px;
+    }
+    .event1 i,.event2 i,.event3 i{
+        color:$accent1;
+        font-size: 30px;
+        margin-right: 5px;
+    }
+    .date{
+        display: inline-flex;
+        flex-direction: column;
+        font:20px neutraface text;
+        text-transform: uppercase;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        span{
+            font-weight: 900;
+            font-size: 30px;
+        }
+    }
+    .noticia{
+        display: inline-flex;
+        flex-direction: column;
+        p{
+            font:$textfont;
+            color: $colorfont;
+            text-align: justify;
+        }
+        h2{
+            font:$tith2font;
+            color:$accent1;
+            text-align: left;
+        }
+    }
+
+}
+/*contenido episodios*/
+.episodios-resumen{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin-left: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .caps{
+        display: inline-flex;
+        margin:20px;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 150px;
+        .capimg{
+            width: 190px;
+            height: 130px;
+            border: $borderimg;
+            border-radius:5px;
+            margin-right: 10px;
+            img{
+                width:180px;
+                height: 120px;
+                padding: 2px;
+            }
+        }
+    }
+    .capresu{
+        display: inline-block;
+        flex-direction: column;
+        height: 130px;
+        h2{
+            font:$tith2font;
+            color: $accent1;
+            text-align: left;
+        }
+        p{
+            font:$textfont;
+            color: $colorfont;
+            text-align: justify;
+            height: 100px;
+            padding: 0 5px;
+            overflow: scroll;
+        }
+    }
+}
+/*contenido Personajes*/
+.personajes{
+    display: flex;
+    width: 96%;
+    height: 90%;
+    margin-left: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .pjs{
+        width: 320px;
+        min-height: 280px;
+        display: inline-flex;
+        margin: 10px 20px 0px 10px;
+        padding:0px;
+        .pjs-name{
+            position: absolute;
+            margin-left: 0px;
+            margin-top: 0px;
+            border-bottom: 1px solid $accent1;
+            width: 320px;
+            height: 30px;
+            h1{
+                position: absolute;
+                margin-left: 10px;
+                margin-top: 0px;
+                text-transform: uppercase;
+                font:900 18px Neutraface text;
+                color: $colorfont;
+                letter-spacing: 1px;
+                text-align: left;
+            }
+        }
+        .pjs-img{
+            border: $borderimg;
+            border-radius: 5px;
+            width: 160px;
+            height: 210px;
+            position: absolute;
+            margin-left: 160px;
+            overflow: hidden;
+            margin-top: 40px;
+            img{
+                width: 160px;
+                height: 210px;
+                mix-blend-mode: multiply;
+                filter: brightness(50%);
+                margin-top: 0px;
+                overflow: hidden;
+            }
+            :hover{
+                mix-blend-mode:none;
+                filter: none;
+            }
+        }
+        .conrad{background:linear-gradient(to left bottom, transparent 50%, $conradcolor 50%);}
+        .conrad:hover{background:transparent;}
+        .jere{background:linear-gradient(to left bottom, transparent 50%, $jerecolor 50%);}
+        .jere:hover{background:transparent;}
+        .belly{background:linear-gradient(to left bottom, transparent 50%, $bellycolor 50%);}
+        .belly:hover{background:transparent;}
+        .suss{background:linear-gradient(to left bottom, transparent 50%, $m1color 50%);}
+        .suss:hover{background:transparent;}
+        .steve{background:linear-gradient(to left bottom, transparent 50%, $stepcolor 50%);}
+        .steve:hover{background:transparent;}
+        .lau{background:linear-gradient(to left bottom, transparent 50%, $m2color 50%);}
+        .lau:hover{background:transparent;}
+        .pjs-data{
+            position: absolute;
+            margin-left: 0px;
+            margin-top: 50px;
+            width: 160px;
+            height: 200px;
+            overflow: scroll;
+            text-align: left;
+            text-transform: lowercase;
+            padding: 5px 0px;
+            font:$textfont;
+            ol{justify-content: space-between;
+                li{
+                    margin-left: 10px;
+                    justify-content: space-between;
+                    position: relative;
+                    margin-top: 10px;
+                    border-bottom: 1px solid $accent2;
+                    span{
+                        font-weight: 900;
+                        padding-right: 30px;
+                    }
+                }
+            }
+            p{
+                text-align: center;
+                font-size: 12px;
+                font-style: italic;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+/*contenido books*/
+.img-dato{
+    width: auto;
+    height: 150px;
+    border: $borderimg;
+    border-radius: 20px;
+}
+.details-datos{
+    margin: 20px;
+    border-bottom: 1px solid $accent2;
+}
+.data-book{
+    flex-direction: column;
+}
+.data-book h2, .dat-difere h2{
+    font: 900 25px neutraface text;
+    color: $accent1;
+}
+.data-book p,.dat-difere p{
+    font:$textfont;
+    padding:5px 20px;
+    text-align: justify;
+}
+.diferencias{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin:15px;}
+.dat-difere{
+    flex-direction: column;
+    margin: 20px;
+}
+

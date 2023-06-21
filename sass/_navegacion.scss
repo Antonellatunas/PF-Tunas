@@ -1,0 +1,21 @@
+/*navegacion*/
+.navegacion{
+    background-color:#aaa28d !important;
+    font:900 20px neutraface text;
+    .nav-text{
+        background:#b78a86;
+        padding: 15px;
+        margin: -10px 25px -10px -10px;
+        border-radius: 0px 50px 50px 0px;
+        color: #f7f7f7;
+    }
+    .nav-colorac {
+        color: #f7f7f7!important;
+    }
+    .nav-linkho:hover{
+        background-color:#b78a86;
+        transition: .4s all;
+        color: #f7f7f7;
+        border-radius: 10px;
+    }
+}
